@@ -20,14 +20,21 @@ export default function Liveclasses() {
           <Text style={styles.compliment}>Ks-Willamson</Text>
           <View style={styles.detail}>
             <View>
-                <Text style={styles.title}>Start Time</Text>
-                <Text>12:05</Text>
+              <Text style={styles.title}>Start Time</Text>
+              <Text>12:05</Text>
             </View>
             <View>
-            <Text style={styles.title}>End Time</Text>
-            <Text>02:05</Text>
+              <Text style={styles.title}>End Time</Text>
+              <Text>02:05</Text>
             </View>
-            <Text style={{textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}> Expire </Text>
+            <Text
+              style={{
+                textDecorationLine: 'line-through',
+                textDecorationStyle: 'solid',
+              }}>
+              {' '}
+              Expire{' '}
+            </Text>
           </View>
         </View>
 
@@ -39,14 +46,21 @@ export default function Liveclasses() {
           <Text style={styles.compliment}>Ks-Willamson</Text>
           <View style={styles.detail}>
             <View>
-                <Text style={styles.title}>Start Time</Text>
-                <Text>12:05</Text>
+              <Text style={styles.title}>Start Time</Text>
+              <Text>12:05</Text>
             </View>
             <View>
-            <Text style={styles.title}>End Time</Text>
-            <Text>02:05</Text>
+              <Text style={styles.title}>End Time</Text>
+              <Text>02:05</Text>
             </View>
-            <Text style={{textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}> Complited </Text>
+            <Text
+              style={{
+                textDecorationLine: 'line-through',
+                textDecorationStyle: 'solid',
+              }}>
+              {' '}
+              Complited{' '}
+            </Text>
           </View>
         </View>
       </ScrollView>
@@ -87,11 +101,11 @@ const styles = StyleSheet.create({
   dated: {
     color: 'gray',
   },
-  detail:{
-    flexDirection:'row',
-    justifyContent:'space-between',
+  detail: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
-  title:{
+  title: {
     color: '#AE2327',
-  }
+  },
 });
