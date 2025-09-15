@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
 const Tabview = () => {
   const [activeTab, setActiveTab] = useState('Screen1');
 
-  const handleTabPress = (tabName) => {
+  const handleTabPress = tabName => {
     setActiveTab(tabName);
   };
 
@@ -16,14 +16,12 @@ const Tabview = () => {
             styles.tabButton,
             activeTab === 'Screen1' && styles.activeTabButton,
           ]}
-          onPress={() => handleTabPress('Screen1')}
-        >
+          onPress={() => handleTabPress('Screen1')}>
           <Text
             style={[
               styles.tabText,
               activeTab === 'Screen1' && styles.activeTabText,
-            ]}
-          >
+            ]}>
             Screen 1
           </Text>
         </TouchableOpacity>
@@ -32,14 +30,12 @@ const Tabview = () => {
             styles.tabButton,
             activeTab === 'Screen2' && styles.activeTabButton,
           ]}
-          onPress={() => handleTabPress('Screen2')}
-        >
+          onPress={() => handleTabPress('Screen2')}>
           <Text
             style={[
               styles.tabText,
               activeTab === 'Screen2' && styles.activeTabText,
-            ]}
-          >
+            ]}>
             Screen 2
           </Text>
         </TouchableOpacity>
