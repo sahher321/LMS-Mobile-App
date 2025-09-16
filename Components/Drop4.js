@@ -1,25 +1,22 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import {View, Text, SafeAreaView, StatusBar, Dimensions, StyleSheet, ScrollView, Image} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  StatusBar,
+  Dimensions,
+  StyleSheet,
+  ScrollView,
+  Image,
+} from 'react-native';
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default Demo5 = () => {
-  const countries = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '10',
-    
-  ];
+  const countries = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
   const countriesWithFlags = [
     {title: 'Egypt', image: require('../assets/new.png')},
     {title: 'Canada', image: require('../assets/new.png')},
@@ -30,21 +27,16 @@ export default Demo5 = () => {
     {title: 'Dubai', image: require('../assets/new.png')},
   ];
 
-  const renderHeader = () => {
-    
-  };
+  const renderHeader = () => {};
 
   return (
     <SafeAreaView>
-      <StatusBar  />
-      <View style={{width:'100%'}} >
+      <StatusBar />
+      <View style={{width: '100%'}}>
         {renderHeader()}
         <ScrollView
           showsVerticalScrollIndicator={false}
-          alwaysBounceVertical={false}
-          >
-          
-
+          alwaysBounceVertical={false}>
           <SelectDropdown
             data={countries}
             // defaultValueByIndex={1}
@@ -62,24 +54,21 @@ export default Demo5 = () => {
             buttonStyle={styles.dropdown1BtnStyle}
             buttonTextStyle={styles.dropdown1BtnTxtStyle}
             renderDropdownIcon={isOpened => {
-              return <FontAwesome name={isOpened ? 'chevron-up' : 'chevron-down'} color={'#444'} size={18} />;
+              return (
+                <FontAwesome
+                  name={isOpened ? 'chevron-up' : 'chevron-down'}
+                  color={'#444'}
+                  size={18}
+                />
+              );
             }}
             dropdownIconPosition={'right'}
             dropdownStyle={styles.dropdown1DropdownStyle}
             rowStyle={styles.dropdown1RowStyle}
             rowTextStyle={styles.dropdown1RowTxtStyle}
           />
-
-          
-
-          
-
-          
         </ScrollView>
       </View>
-      
-      
-      
     </SafeAreaView>
   );
 };
@@ -151,11 +140,10 @@ const styles = StyleSheet.create({
   dropdown3BtnStyle: {
     width: '80%',
     height: 50,
-    
+
     paddingHorizontal: 0,
     borderWidth: 1,
     borderRadius: 8,
-   
   },
   dropdown3BtnChildStyle: {
     flex: 1,
@@ -174,7 +162,6 @@ const styles = StyleSheet.create({
   },
   dropdown3DropdownStyle: {backgroundColor: 'slategray'},
   dropdown3RowStyle: {
-   
     borderBottomColor: '#444',
     height: 50,
   },
@@ -187,7 +174,6 @@ const styles = StyleSheet.create({
   },
   dropdownRowImage: {width: 45, height: 45, resizeMode: 'cover'},
   dropdown3RowTxt: {
-    
     textAlign: 'center',
     fontWeight: 'bold',
     fontSize: 24,
@@ -197,7 +183,7 @@ const styles = StyleSheet.create({
   dropdown4BtnStyle: {
     width: '50%',
     height: 50,
-    
+
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#444',
