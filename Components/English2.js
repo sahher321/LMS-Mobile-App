@@ -117,14 +117,11 @@ const styles = StyleSheet.create({
     paddingVertical: '10%',
     paddingBottom: '20%',
   },
-
   dropdown1BtnStyle: {
     width: '100%',
     height: 50,
     backgroundColor: 'white',
-
     borderWidth: 1,
-
     borderColor: '#AE2327',
   },
   dropdown1BtnTxtStyle: {
@@ -142,7 +139,6 @@ const styles = StyleSheet.create({
     color: '#444',
     textAlign: 'left',
   },
-
   dropdown2BtnStyle: {
     width: '80%',
     height: 50,
@@ -172,7 +168,6 @@ const styles = StyleSheet.create({
   dropdown3BtnStyle: {
     width: '95%',
     height: 50,
-
     paddingHorizontal: 0,
     borderWidth: 1,
     borderRadius: 8,
@@ -221,11 +216,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginHorizontal: 12,
   },
-
   dropdown4BtnStyle: {
     width: '50%',
     height: 50,
-
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#444',

@@ -195,8 +195,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#444',
   },
-  dropdown4BtnTxtStyle: {color: '#444', textAlign: 'left'},
-  dropdown4DropdownStyle: {backgroundColor: '#EFEFEF'},
-  dropdown4RowStyle: {backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5'},
-  dropdown4RowTxtStyle: {color: '#444', textAlign: 'left'},
+  dropdown4BtnTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
+  dropdown4DropdownStyle: {
+    backgroundColor: '#EFEFEF',
+  },
+  dropdown4RowStyle: {
+    backgroundColor: '#EFEFEF',
+    borderBottomColor: '#C5C5C5',
+  },
+  dropdown4RowTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
 });

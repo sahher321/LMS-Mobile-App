@@ -95,9 +95,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#F6F6F6',
   },
-  headerTitle: {color: '#000', fontWeight: 'bold', fontSize: 16},
-  saveAreaViewContainer: {flex: 1, backgroundColor: '#FFF'},
-  viewContainer: {flex: 1, width, backgroundColor: '#FFF'},
+  headerTitle: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  saveAreaViewContainer: {
+    flex: 1,
+    backgroundColor: '#FFF',
+  },
+  viewContainer: {
+    flex: 1,
+    width,
+    backgroundColor: '#FFF',
+  },
   scrollViewContainer: {
     flexGrow: 1,
     justifyContent: 'space-between',
@@ -114,10 +125,21 @@ const styles = StyleSheet.create({
 
     borderColor: '#444',
   },
-  dropdown1BtnTxtStyle: {color: '#444', textAlign: 'left'},
-  dropdown1DropdownStyle: {backgroundColor: '#EFEFEF'},
-  dropdown1RowStyle: {backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5'},
-  dropdown1RowTxtStyle: {color: '#444', textAlign: 'left'},
+  dropdown1BtnTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
+  dropdown1DropdownStyle: {
+    backgroundColor: '#EFEFEF',
+  },
+  dropdown1RowStyle: {
+    backgroundColor: '#EFEFEF',
+    borderBottomColor: '#C5C5C5',
+  },
+  dropdown1RowTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
 
   dropdown2BtnStyle: {
     width: '80%',
@@ -135,7 +157,10 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 12,
     borderBottomRightRadius: 12,
   },
-  dropdown2RowStyle: {backgroundColor: '#444', borderBottomColor: '#C5C5C5'},
+  dropdown2RowStyle: {
+    backgroundColor: '#444',
+    borderBottomColor: '#C5C5C5',
+  },
   dropdown2RowTxtStyle: {
     color: '#FFF',
     textAlign: 'center',
@@ -157,7 +182,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 18,
   },
-  dropdown3BtnImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdown3BtnImage: {
+    width: 45,
+    height: 45,
+    resizeMode: 'cover',
+  },
   dropdown3BtnTxt: {
     color: '#444',
     textAlign: 'center',
@@ -165,7 +194,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginHorizontal: 12,
   },
-  dropdown3DropdownStyle: {backgroundColor: 'slategray'},
+  dropdown3DropdownStyle: {
+    backgroundColor: 'slategray',
+  },
   dropdown3RowStyle: {
     borderBottomColor: '#444',
     height: 50,
@@ -177,7 +208,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 18,
   },
-  dropdownRowImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdownRowImage: {
+    width: 45,
+    height: 45,
+    resizeMode: 'cover',
+  },
   dropdown3RowTxt: {
     textAlign: 'center',
     fontWeight: 'bold',
@@ -193,8 +228,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#444',
   },
-  dropdown4BtnTxtStyle: {color: '#444', textAlign: 'left'},
-  dropdown4DropdownStyle: {backgroundColor: '#EFEFEF'},
-  dropdown4RowStyle: {backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5'},
-  dropdown4RowTxtStyle: {color: '#444', textAlign: 'left'},
+  dropdown4BtnTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
+  dropdown4DropdownStyle: {
+    backgroundColor: '#EFEFEF',
+  },
+  dropdown4RowStyle: {
+    backgroundColor: '#EFEFEF',
+    borderBottomColor: '#C5C5C5',
+  },
+  dropdown4RowTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
 });
