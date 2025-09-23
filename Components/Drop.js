@@ -1,6 +1,15 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import {View, Text, SafeAreaView, StatusBar, Dimensions, StyleSheet, ScrollView, Image} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  StatusBar,
+  Dimensions,
+  StyleSheet,
+  ScrollView,
+  Image,
+} from 'react-native';
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -15,7 +24,6 @@ export default Demo1 = () => {
     'Social Studies',
     'Islamiat',
     'Sindhi',
-    
   ];
   const countriesWithFlags = [
     {title: 'Egypt', image: require('../assets/new.png')},
@@ -27,21 +35,17 @@ export default Demo1 = () => {
     {title: 'Dubai', image: require('../assets/new.png')},
   ];
 
-  const renderHeader = () => {
-    
-  };
+  const renderHeader = () => {};
 
   return (
     <SafeAreaView>
       <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
-      <View style={{width:150, marginLeft:'55%'}} >
+      <View style={{width: 150, marginLeft: '55%'}}>
         {renderHeader()}
         <ScrollView
           showsVerticalScrollIndicator={false}
           alwaysBounceVertical={false}
           contentContainerStyle={styles.scrollViewContainer}>
-          
-
           <SelectDropdown
             data={countries}
             // defaultValueByIndex={1}
@@ -59,24 +63,21 @@ export default Demo1 = () => {
             buttonStyle={styles.dropdown1BtnStyle}
             buttonTextStyle={styles.dropdown1BtnTxtStyle}
             renderDropdownIcon={isOpened => {
-              return <FontAwesome name={isOpened ? 'chevron-up' : 'chevron-down'} color={'#444'} size={18} />;
+              return (
+                <FontAwesome
+                  name={isOpened ? 'chevron-up' : 'chevron-down'}
+                  color={'#444'}
+                  size={18}
+                />
+              );
             }}
             dropdownIconPosition={'right'}
             dropdownStyle={styles.dropdown1DropdownStyle}
             rowStyle={styles.dropdown1RowStyle}
             rowTextStyle={styles.dropdown1RowTxtStyle}
           />
-
-          
-
-          
-
-          
         </ScrollView>
       </View>
-      
-      
-      
     </SafeAreaView>
   );
 };
