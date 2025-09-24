@@ -45,8 +45,6 @@ export default Demo2 = () => {
           alwaysBounceVertical={false}>
           <SelectDropdown
             data={countries}
-            // defaultValueByIndex={1}
-            // defaultValue={'Egypt'}
             onSelect={(selectedItem, index) => {
               console.log(selectedItem, index);
             }}

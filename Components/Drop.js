@@ -12,7 +12,6 @@ import {
 } from 'react-native';
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default Demo1 = () => {
@@ -24,15 +23,6 @@ export default Demo1 = () => {
     'Social Studies',
     'Islamiat',
     'Sindhi',
-  ];
-  const countriesWithFlags = [
-    {title: 'Egypt', image: require('../assets/new.png')},
-    {title: 'Canada', image: require('../assets/new.png')},
-    {title: 'Australia', image: require('../assets/new.png')},
-    {title: 'Ireland', image: require('../assets/new.png')},
-    {title: 'Brazil', image: require('../assets/new.png')},
-    {title: 'England', image: require('../assets/new.png')},
-    {title: 'Dubai', image: require('../assets/new.png')},
   ];
 
   const renderHeader = () => {};
@@ -48,8 +38,6 @@ export default Demo1 = () => {
           contentContainerStyle={styles.scrollViewContainer}>
           <SelectDropdown
             data={countries}
-            // defaultValueByIndex={1}
-            // defaultValue={'Egypt'}
             onSelect={(selectedItem, index) => {
               console.log(selectedItem, index);
             }}
@@ -98,9 +86,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#F6F6F6',
   },
-  headerTitle: {color: '#000', fontWeight: 'bold', fontSize: 16},
-  saveAreaViewContainer: {flex: 1, backgroundColor: '#FFF'},
-  viewContainer: {flex: 1, width, backgroundColor: '#FFF'},
+  headerTitle: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  saveAreaViewContainer: {
+    flex: 1,
+    backgroundColor: '#FFF',
+  },
+  viewContainer: {
+    flex: 1,
+    width,
+    backgroundColor: '#FFF',
+  },
   scrollViewContainer: {
     flexGrow: 1,
     justifyContent: 'space-between',
@@ -117,10 +116,21 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#444',
   },
-  dropdown1BtnTxtStyle: {color: '#444', textAlign: 'left'},
-  dropdown1DropdownStyle: {backgroundColor: '#EFEFEF'},
-  dropdown1RowStyle: {backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5'},
-  dropdown1RowTxtStyle: {color: '#444', textAlign: 'left'},
+  dropdown1BtnTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
+  dropdown1DropdownStyle: {
+    backgroundColor: '#EFEFEF',
+  },
+  dropdown1RowStyle: {
+    backgroundColor: '#EFEFEF',
+    borderBottomColor: '#C5C5C5',
+  },
+  dropdown1RowTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
 
   dropdown2BtnStyle: {
     width: '80%',
@@ -138,7 +148,10 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 12,
     borderBottomRightRadius: 12,
   },
-  dropdown2RowStyle: {backgroundColor: '#444', borderBottomColor: '#C5C5C5'},
+  dropdown2RowStyle: {
+    backgroundColor: '#444',
+    borderBottomColor: '#C5C5C5',
+  },
   dropdown2RowTxtStyle: {
     color: '#FFF',
     textAlign: 'center',
@@ -161,7 +174,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 18,
   },
-  dropdown3BtnImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdown3BtnImage: {
+    width: 45,
+    height: 45,
+    resizeMode: 'cover',
+  },
   dropdown3BtnTxt: {
     color: '#444',
     textAlign: 'center',
@@ -169,7 +186,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginHorizontal: 12,
   },
-  dropdown3DropdownStyle: {backgroundColor: 'slategray'},
+  dropdown3DropdownStyle: {
+    backgroundColor: 'slategray',
+  },
   dropdown3RowStyle: {
     backgroundColor: 'slategray',
     borderBottomColor: '#444',
@@ -182,7 +201,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 18,
   },
-  dropdownRowImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdownRowImage: {
+    width: 45,
+    height: 45,
+    resizeMode: 'cover',
+  },
   dropdown3RowTxt: {
     color: '#F1F1F1',
     textAlign: 'center',
@@ -199,8 +222,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#444',
   },
-  dropdown4BtnTxtStyle: {color: '#444', textAlign: 'left'},
-  dropdown4DropdownStyle: {backgroundColor: '#EFEFEF'},
-  dropdown4RowStyle: {backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5'},
-  dropdown4RowTxtStyle: {color: '#444', textAlign: 'left'},
+  dropdown4BtnTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
+  dropdown4DropdownStyle: {
+    backgroundColor: '#EFEFEF',
+  },
+  dropdown4RowStyle: {
+    backgroundColor: '#EFEFEF',
+    borderBottomColor: '#C5C5C5',
+  },
+  dropdown4RowTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
 });

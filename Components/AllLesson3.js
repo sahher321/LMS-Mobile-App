@@ -17,15 +17,7 @@ import SelectDropdown from 'react-native-select-dropdown';
 
 export default AllLesson = () => {
   const countries = ['Lesson 1', 'Lesson 2', 'Lesson 3'];
-  const countriesWithFlags = [
-    {title: 'Egypt', image: require('../assets/new.png')},
-    {title: 'Canada', image: require('../assets/new.png')},
-    {title: 'Australia', image: require('../assets/new.png')},
-    {title: 'Ireland', image: require('../assets/new.png')},
-    {title: 'Brazil', image: require('../assets/new.png')},
-    {title: 'England', image: require('../assets/new.png')},
-    {title: 'Dubai', image: require('../assets/new.png')},
-  ];
+
 
   const renderHeader = () => {};
 
