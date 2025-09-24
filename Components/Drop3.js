@@ -12,21 +12,11 @@ import {
 } from 'react-native';
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default Demo4 = () => {
   const countries = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-  const countriesWithFlags = [
-    {title: 'Egypt', image: require('../assets/new.png')},
-    {title: 'Canada', image: require('../assets/new.png')},
-    {title: 'Australia', image: require('../assets/new.png')},
-    {title: 'Ireland', image: require('../assets/new.png')},
-    {title: 'Brazil', image: require('../assets/new.png')},
-    {title: 'England', image: require('../assets/new.png')},
-    {title: 'Dubai', image: require('../assets/new.png')},
-  ];
-
+  
   const renderHeader = () => {};
 
   return (

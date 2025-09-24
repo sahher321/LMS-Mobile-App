@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import {
   View,
@@ -12,7 +11,6 @@ import {
 } from 'react-native';
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default English3 = () => {
@@ -23,15 +21,6 @@ export default English3 = () => {
     'Social Studies',
     'Maths',
     'Computer',
-  ];
-  const countriesWithFlags = [
-    {title: 'Egypt', image: require('../assets/new.png')},
-    {title: 'Canada', image: require('../assets/new.png')},
-    {title: 'Australia', image: require('../assets/new.png')},
-    {title: 'Ireland', image: require('../assets/new.png')},
-    {title: 'Brazil', image: require('../assets/new.png')},
-    {title: 'England', image: require('../assets/new.png')},
-    {title: 'Dubai', image: require('../assets/new.png')},
   ];
 
   const renderHeader = () => {};
@@ -46,8 +35,6 @@ export default English3 = () => {
           alwaysBounceVertical={false}>
           <SelectDropdown
             data={countries}
-            // defaultValueByIndex={1}
-            // defaultValue={'Egypt'}
             onSelect={(selectedItem, index) => {
               console.log(selectedItem, index);
             }}
