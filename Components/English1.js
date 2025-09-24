@@ -24,15 +24,6 @@ export default English1 = () => {
     'Maths',
     'Computer',
   ];
-  const countriesWithFlags = [
-    {title: 'Egypt', image: require('../assets/new.png')},
-    {title: 'Canada', image: require('../assets/new.png')},
-    {title: 'Australia', image: require('../assets/new.png')},
-    {title: 'Ireland', image: require('../assets/new.png')},
-    {title: 'Brazil', image: require('../assets/new.png')},
-    {title: 'England', image: require('../assets/new.png')},
-    {title: 'Dubai', image: require('../assets/new.png')},
-  ];
 
   const renderHeader = () => {};
 
@@ -46,8 +37,6 @@ export default English1 = () => {
           alwaysBounceVertical={false}>
           <SelectDropdown
             data={countries}
-            // defaultValueByIndex={1}
-            // defaultValue={'Egypt'}
             onSelect={(selectedItem, index) => {
               console.log(selectedItem, index);
             }}
