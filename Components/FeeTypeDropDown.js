@@ -2,11 +2,7 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
-  Button,
   TextInput,
-  Touchable,
-  TouchableOpacity,
   ScrollView,
 } from 'react-native';
 import React from 'react';
@@ -14,7 +10,9 @@ import PaymentMethod from './PayMethodDropdown';
 import PaymentMethod2 from './Payment2';
 import SmartCard from './SmartCardDropdown';
 import PKR from './PKR';
+
 const FeeTypeDropDown = () => {
+  
   const [text, onChangeText] = React.useState('Enter Payment Amount');
 
   return (
@@ -50,7 +48,7 @@ const FeeTypeDropDown = () => {
           <Text style={{fontSize: 14, fontWeight: 500, color: '#474A56'}}>
             Amount
           </Text>
-          <View style={{flexDirection: 'row',marginTop: 10}}>
+          <View style={{flexDirection: 'row', marginTop: 10}}>
             <View style={{width: '60%'}}>
               <View
                 style={{
@@ -61,7 +59,7 @@ const FeeTypeDropDown = () => {
                   borderRadius: 9,
                 }}>
                 <TextInput
-                  style={{fontSize:16,color:'#474A56',marginLeft:10}}
+                  style={{fontSize: 16, color: '#474A56', marginLeft: 10}}
                   onChangeText={onChangeText}
                   value={text}
                 />
