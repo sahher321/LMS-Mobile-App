@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import {
   View,
@@ -12,12 +11,10 @@ import {
 } from 'react-native';
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default AllLesson = () => {
   const countries = ['Lesson 1', 'Lesson 2', 'Lesson 3'];
-
 
   const renderHeader = () => {};
 
@@ -31,8 +28,6 @@ export default AllLesson = () => {
           alwaysBounceVertical={false}>
           <SelectDropdown
             data={countries}
-            // defaultValueByIndex={1}
-            // defaultValue={'Egypt'}
             onSelect={(selectedItem, index) => {
               console.log(selectedItem, index);
             }}
@@ -81,9 +76,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#F6F6F6',
   },
-  headerTitle: {color: '#000', fontWeight: 'bold', fontSize: 16},
-  saveAreaViewContainer: {flex: 1, backgroundColor: '#FFF'},
-  viewContainer: {flex: 1, width, backgroundColor: '#FFF'},
+  headerTitle: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  saveAreaViewContainer: {
+    flex: 1,
+    backgroundColor: '#FFF',
+  },
+  viewContainer: {
+    flex: 1,
+    width,
+    backgroundColor: '#FFF',
+  },
   scrollViewContainer: {
     flexGrow: 1,
     justifyContent: 'space-between',
@@ -101,10 +107,21 @@ const styles = StyleSheet.create({
 
     borderColor: '#AE2327',
   },
-  dropdown1BtnTxtStyle: {color: '#07354B', textAlign: 'left'},
-  dropdown1DropdownStyle: {backgroundColor: '#EFEFEF'},
-  dropdown1RowStyle: {backgroundColor: '#EFEFEF', borderBottomColor: '#C5C5C5'},
-  dropdown1RowTxtStyle: {color: '#444', textAlign: 'left'},
+  dropdown1BtnTxtStyle: {
+    color: '#07354B',
+    textAlign: 'left',
+  },
+  dropdown1DropdownStyle: {
+    backgroundColor: '#EFEFEF',
+  },
+  dropdown1RowStyle: {
+    backgroundColor: '#EFEFEF',
+    borderBottomColor: '#C5C5C5',
+  },
+  dropdown1RowTxtStyle: {
+    color: '#444',
+    textAlign: 'left',
+  },
 
   dropdown2BtnStyle: {
     width: '80%',
