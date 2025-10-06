@@ -16,12 +16,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default PKR = () => {
-  const countries = [
-    'USD',
-    'POUND',
-    
-    
-  ];
+  const countries = ['USD', 'POUND'];
   const countriesWithFlags = [
     {title: 'Egypt', image: require('../assets/new.png')},
     {title: 'Canada', image: require('../assets/new.png')},
@@ -111,7 +106,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
 
     borderWidth: 1,
-borderRadius:9,
+    borderRadius: 9,
     borderColor: '#C8D1E1',
   },
   dropdown1BtnTxtStyle: {color: '#474A56', textAlign: 'left'},
