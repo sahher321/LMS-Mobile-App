@@ -12,12 +12,12 @@ import {
 
 export default function Profile() {
   const fields = [
-    { label: 'Username', placeholder: 'Emma Watson' },
-    { label: 'First name', placeholder: 'Emma' },
-    { label: 'Last name', placeholder: 'Watson' },
-    { label: 'Date of Birth', placeholder: '25-25-2020' },
-    { label: 'Roll No', placeholder: '1125' },
-    { label: 'Registration No', placeholder: '123456' },
+    {label: 'Username', placeholder: 'Emma Watson'},
+    {label: 'First name', placeholder: 'Emma'},
+    {label: 'Last name', placeholder: 'Watson'},
+    {label: 'Date of Birth', placeholder: '25-25-2020'},
+    {label: 'Roll No', placeholder: '1125'},
+    {label: 'Registration No', placeholder: '123456'},
   ];
 
   return (

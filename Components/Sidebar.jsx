@@ -7,7 +7,7 @@ import {
   View,
   Image,
   ScrollView,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 import Footer from './Footer';
 import Home from './Home';
@@ -15,21 +15,21 @@ import Home from './Home';
 const Sidebar = () => {
   const drawer = useRef(null);
   const [drawerPosition, setDrawerPosition] = useState('left');
-  
 
   const navigationView = () => (
     <ScrollView style={[styles.container, styles.navigationContainer]}>
-  <View style={{flexDirection:'row',margin:16}}>
-        <Image style={styles.profileimg} source={require('../assets/profileimg.png')}/>
-   <View>
-   <Text style={styles.name}>Hello</Text>
-      <Text  style={styles.name}>Muhammad Shahzar</Text>
-   </View>
-   
-    </View>
-    
-    
-    <Text style={styles.paragraphhead}>Account</Text>
+      <View style={{flexDirection: 'row', margin: 16}}>
+        <Image
+          style={styles.profileimg}
+          source={require('../assets/profileimg.png')}
+        />
+        <View>
+          <Text style={styles.name}>Hello</Text>
+          <Text style={styles.name}>Muhammad Shahzar</Text>
+        </View>
+      </View>
+
+      <Text style={styles.paragraphhead}>Account</Text>
       <Text style={styles.paragraph}>My Teachers</Text>
       <Text style={styles.paragraph}>Academic</Text>
       <Text style={styles.paragraph}>Assignment</Text>
@@ -42,7 +42,6 @@ const Sidebar = () => {
       <Text style={styles.paragraph}>Library</Text>
       <Text style={styles.paragraph}>Pick & Drop </Text>
       <Text style={styles.paragraph}>Hotel </Text>
-      
     </ScrollView>
   );
 
@@ -53,20 +52,19 @@ const Sidebar = () => {
       drawerPosition={drawerPosition}
       renderNavigationView={navigationView}>
       <View style={styles.container}>
-        
-      <View style={styles.header}>
-       <TouchableOpacity style={styles.preButton}
-        onPress={() => drawer.current.openDrawer()}>
+        <View style={styles.header}>
+          <TouchableOpacity
+            style={styles.preButton}
+            onPress={() => drawer.current.openDrawer()}>
             <Image
               source={require('../assets/line.png')}
               style={styles.preIcon}
             />
           </TouchableOpacity>
-    
+
           <View>
-           
-          <Text style={styles.text}>Muhammad</Text>
-          <Text style={styles.text}>raza</Text>
+            <Text style={styles.text}>Muhammad</Text>
+            <Text style={styles.text}>raza</Text>
           </View>
           <TouchableOpacity style={styles.preButton}>
             <Image
@@ -74,11 +72,8 @@ const Sidebar = () => {
               style={styles.queIcon}
             />
           </TouchableOpacity>
-    </View>
-       
-       
+        </View>
       </View>
-  
     </DrawerLayoutAndroid>
   );
 };
@@ -86,8 +81,6 @@ const Sidebar = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-   
-    
   },
   header: {
     height: 65,
@@ -97,15 +90,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
-    display:'flex',
-    flexDirection:'row',
-  
+    display: 'flex',
+    flexDirection: 'row',
   },
   text: {
     color: 'white',
     fontWeight: 'bold',
     fontSize: 18,
-
   },
   navigationContainer: {
     backgroundColor: '#AE2327',
@@ -113,27 +104,26 @@ const styles = StyleSheet.create({
   paragraph: {
     padding: 16,
     fontSize: 18,
-    marginLeft:15,
+    marginLeft: 15,
     textAlign: 'Left',
-    color:'white',
+    color: 'white',
   },
-  paragraphhead:{
+  paragraphhead: {
     padding: 16,
     fontSize: 25,
     textAlign: 'Left',
     fontWeight: 'bold',
-    color:'white',
-    
+    color: 'white',
   },
-  profileimg:{
-    height:60,
-    width:60,
+  profileimg: {
+    height: 60,
+    width: 60,
   },
-  name:{
-    color:'white',
+  name: {
+    color: 'white',
     fontSize: 17,
-    fontWeight:'bold'
-  }
+    fontWeight: 'bold',
+  },
 });
 
 export default Sidebar;
