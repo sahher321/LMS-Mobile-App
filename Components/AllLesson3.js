@@ -181,7 +181,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 18,
   },
-  dropdownRowImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdownRowImage: {
+    width: 45, 
+    height: 45,
+    resizeMode: 'cover'
+  },
   dropdown3RowTxt: {
     textAlign: 'center',
     fontWeight: 'bold',

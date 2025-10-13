@@ -129,7 +129,10 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 12,
     borderBottomRightRadius: 12,
   },
-  dropdown2RowStyle: {backgroundColor: '#444', borderBottomColor: '#C5C5C5'},
+  dropdown2RowStyle: {
+    backgroundColor: '#444', 
+    borderBottomColor: '#C5C5C5'
+  },
   dropdown2RowTxtStyle: {
     color: '#FFF',
     textAlign: 'center',

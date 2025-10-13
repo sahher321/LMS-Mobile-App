@@ -14,10 +14,12 @@ export default function Academicsyllabus() {
     <View style={styles.container}>
       <View style={styles.header}>
         <TouchableOpacity style={styles.preButton}>
+
           <Image
             source={require('../assets/backarrow.png')}
             style={styles.preIcon}
           />
+          
         </TouchableOpacity>
         <Text style={styles.text}>Academic</Text>
 
