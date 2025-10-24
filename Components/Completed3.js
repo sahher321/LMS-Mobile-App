@@ -13,9 +13,10 @@ import {
 const {width} = Dimensions.get('window');
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import SelectDropdown from 'react-native-select-dropdown';
-export default Completed3 = () => {
-  const countries = ['Completed', 'Incomplete', 'Pending'];
 
+export default Completed3 = () => {
+
+  const countries = ['Completed', 'Incomplete', 'Pending'];
   const renderHeader = () => {};
 
   return (

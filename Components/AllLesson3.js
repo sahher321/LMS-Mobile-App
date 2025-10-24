@@ -14,8 +14,8 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import SelectDropdown from 'react-native-select-dropdown';
 
 export default AllLesson = () => {
-  const countries = ['Lesson 1', 'Lesson 2', 'Lesson 3'];
 
+  const countries = ['Lesson 1', 'Lesson 2', 'Lesson 3'];
   const renderHeader = () => {};
 
   return (
