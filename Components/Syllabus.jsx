@@ -20,6 +20,7 @@ const Syllabus = () => {
   };
 
   const getHeadingText = () => {
+
     switch (activeComponent) {
       case 1:
         return 'Mid Term';
@@ -31,6 +32,7 @@ const Syllabus = () => {
   };
 
   const renderComponent = () => {
+    
     switch (activeComponent) {
       case 1:
         return <Component1 />;

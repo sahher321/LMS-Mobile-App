@@ -69,7 +69,7 @@ const Test = () => {
               key={index}
               style={[
                 styles.option,
-                selectedOption === option && styles.selectedOption, // Apply different style for selected option
+                selectedOption === option && styles.selectedOption, 
               ]}
               onPress={() => handleOptionPress(option)}>
               <Text

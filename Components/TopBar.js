@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 
 const Leaveapplication = () => {
+  
   const [activeTab, setActiveTab] = useState('Screen1');
 
   const handleTabPress = tabName => {

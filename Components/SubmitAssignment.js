@@ -118,4 +118,3 @@ const SubmitAssignment = () => {
 
 export default SubmitAssignment;
 
-const styles = StyleSheet.create({});

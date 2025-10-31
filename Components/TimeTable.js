@@ -543,7 +543,6 @@ export default TimeTable;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'rgba(174, 35, 39, 0.05)',
-
     height: '100%',
   },
 });
